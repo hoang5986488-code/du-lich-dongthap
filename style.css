@@ -54,7 +54,7 @@ header {
 
 /* Hero Section */
 .hero {
-    height: 80vh;
+    height: 60vh;
     background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), 
                 url('https://thanhnien.mediacdn.vn/Uploaded/hongky-qc/2022_05_16/1-2-5899.jpg') center/cover;
     display: flex;
@@ -206,4 +206,5 @@ header {
     border-top: 1px solid rgba(255,255,255,0.1);
     font-size: 14px;
     color: #aaa;
+
 }
