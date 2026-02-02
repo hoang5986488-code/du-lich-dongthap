@@ -208,6 +208,79 @@ header {
     color: #aaa;
 
 }
+/* --- RESPONSIVE DESIGN --- */
+
+/* 1. Cho máy tính bảng (Màn hình nhỏ hơn 1024px) */
+@media (max-width: 1024px) {
+    header {
+        padding: 15px 5%; /* Thu hẹp khoảng cách lề của Header */
+    }
+
+    .hero h1 {
+        font-size: 2.5rem; /* Giảm kích thước chữ Hero */
+    }
+
+    .container {
+        padding: 40px 5%;
+        gap: 20px;
+    }
+}
+
+/* 2. Cho điện thoại di động (Màn hình nhỏ hơn 768px) */
+@media (max-width: 768px) {
+    /* Chuyển menu thành dạng cột hoặc ẩn bớt nếu cần */
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links {
+        gap: 10px;
+        flex-wrap: wrap; /* Cho phép các mục menu xuống dòng nếu quá dài */
+        justify-content: center;
+    }
+
+    .hero {
+        height: 60vh; /* Giảm chiều cao phần Hero trên điện thoại */
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    /* Quan trọng: Card sẽ chiếm toàn bộ chiều ngang màn hình */
+    .card {
+        width: 100%; 
+        max-width: 400px;
+    }
+
+    /* Điều chỉnh Footer */
+    .footer-container {
+        flex-direction: column; /* Chuyển các cột footer thành hàng dọc */
+        text-align: center;
+    }
+
+    .footer-col h4::after {
+        left: 50%;
+        transform: translateX(-50%); /* Căn giữa đường gạch chân tiêu đề footer */
+    }
+
+    .subscribe-form {
+        justify-content: center;
+    }
+}
+
+/* 3. Cho điện thoại màn hình nhỏ (Dưới 480px) */
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 1.5rem;
+    }
+
+    .nav-links a {
+        font-size: 13px; /* Thu nhỏ chữ menu */
+    }
+}
+
 
 
 
